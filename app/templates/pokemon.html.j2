@@ -5,7 +5,7 @@ Pokemon Stats
 
 {% block content %}
     <h1>Pokemon Stats</h1>
-    <form action="{{url_for('pokemon')}}" method="post">    
+    <form action="{{url_for('site.pokemon')}}" method="post">    
     {{form.hidden_tag()}}
         <div>
         {{form.name.label(class="form-label")}}
@@ -39,7 +39,7 @@ Pokemon Stats
                     <td>{{poke.order}}</td>
                     <td>{{poke.ability}}</td>
                     <td>{{poke.base_experience}}</td>
-                    <td>{{poke.front_shiny}}</td>
+                    <td><img src={{poke.front_shiny}} style="height:150px" style ="tb = 0"</td>
                     <td>{{poke.stat_name1}}</td>
                     <td>{{poke.stat_rating1}}</td>
                     <td>{{poke.stat_name2}}</td>

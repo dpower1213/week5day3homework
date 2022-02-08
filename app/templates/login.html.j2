@@ -1,7 +1,7 @@
 {% extends 'base.html.j2' %}
 {% block content %}
     <h1>Pokemon Login</h1>
-    <form action="{{url_for('login')}}" method="post">    
+    <form action="{{url_for('admin.login')}}" method="post">    
     {{form.hidden_tag()}}
         <div>
         {{form.email.label(class="form-label")}}
